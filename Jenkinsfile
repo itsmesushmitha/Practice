@@ -4,13 +4,12 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Java Version'
                 sh 'java -version'
             }
         }
     }
-    stage {
-        steps{
+    stage('Test') {
+        steps {
             echo 'Testing'
         }
     }
